@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="postit.css">
+</head>
+<body>
+    <main class="post-it">
+        <menu class="comandos-superior">
+            
+            <button class="abrir-mas-postit"><img class="plus" src="comandos_imagenes/circle-plus.png" alt=""></button>
+            <button class="cambio-fondo"><img class="founds" src="comandos_imagenes/circle-ellipsis.png" alt=""></button>
+            <button class="cerrar-postit"><img class="close" src="comandos_imagenes/x.png" alt=""></button>   
+        </menu>
+
+        <section class="comando-escribir-titulo"><textarea class="title" placeholder="Escribe titulo" ></textarea></section>
+    
+        <div class="contenedor-imagen-fondo">
+
+            <div class="contenido-postit" contenteditable="true" spellcheck="true"></div>
+                <img class="imagenes-fondos" src="fondos/mandala.jpg">
+
+        </div>
+
+    <menu class="comando-inferior">
+
+        <button class="boton-destacar"><img id="destacador" src="comandos_imagenes/highlighter.png" alt=""></button>
+        <button class="boton-negrita"><img id="bold" src="comandos_imagenes/bold.png" alt=""></button>
+        <button class="crear-lista"><img class="list" src="comandos_imagenes/list.png" alt=""></button>
+        <button class="tachar-palabra"><img class="tachado" src="comandos_imagenes/tachado.png" alt=""></button>
+    </menu>
+
+    </main>
+    <script src="storage.js"></script>
+<script type="module" src="postit.js"></script>
+</body>
+</html>
